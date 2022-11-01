@@ -2,7 +2,9 @@
 
 Two data sets scraped from Wikipedia (1 November 2022) on London Marathon winners, and general data. The two data sets can be joined by `Year`.
 
-## `winners.csv`
+## Data dictionaries
+
+### `winners.csv`
 
 |Column       |Class      |Description                |Example              |
 |:------------|:----------|:--------------------------|:--------------------|
@@ -10,10 +12,10 @@ Two data sets scraped from Wikipedia (1 November 2022) on London Marathon winner
 |Year         |integer    |Year                       |1981                 |
 |Athlete      |character  |Name of the winner         |Dick Beardsley (Tie) |
 |Nationality  |character  |Nationality of the winner  |United States        |
-|Time         |character  |Winning timee              |02:11:48             |
+|Time         |character  |Winning time               |02:11:48             |
 
 
-## `london_marathon.csv`
+### `london_marathon.csv`
 
 |Column           |Class      |Description                                 |Example              |
 |:----------------|:----------|:-------------------------------------------|:--------------------|
@@ -22,7 +24,14 @@ Two data sets scraped from Wikipedia (1 November 2022) on London Marathon winner
 |Applicants       |integer    |Number of people who applied                |20000                |
 |Accepted         |integer    |Number of people accepted                   |7747                 |
 |Starters         |integer    |Number of people who started                |7055                 |
-|Finishers        |integer    |Number of people who finsihed               |6255                 |
+|Finishers        |integer    |Number of people who finished               |6255                 |
 |Raised           |integer    |Amount raised for charity (£ millions)      |46.5                 |
 |Official.charity |character  |Official charity                            |SportsAid            |
+
+## Plots
+
+<p align="center">
+  <img src="winners.png" width="48%">
+  <img src="london_marathon.png" width="48%">
+</p>
 
