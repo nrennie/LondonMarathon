@@ -16,13 +16,12 @@ london <- london %>%
 london <- london[1:4] 
 categories <- c("Men", "Women", "Wheelchair Men", "Wheelchair Women")
 names(london) <- categories
-london <- dplyr::bind_rows(london, .id = "variable") %>% 
+london <- dplyr::bind_rows(london, .id = "Category") %>% 
   select(-Notes)
 
 # rename columns and sort time
 winners <- london %>% 
-  rename(Category = variable, 
-         Time = `Time(h:m:s)`) %>% 
+  rename(Time = `Time(h:m:s)`) %>% 
   mutate(Year = gsub("\\[|*.\\]", "", Year), 
          Year = as.numeric(Year)) %>% 
   mutate(Time = chron(times = Time))
