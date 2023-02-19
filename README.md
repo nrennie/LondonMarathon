@@ -1,4 +1,8 @@
-# {LondonMarathon}
+<!-- badges: start -->
+  [![R-CMD-check](https://github.com/nrennie/LondonMarathon/workflows/R-CMD-check/badge.svg)](https://github.com/nrennie/LondonMarathon/actions)
+<!-- badges: end -->
+
+# LondonMarathon <img src="man/figures/logo.png" align="right" width="120" />
 
 An R package containing two data sets scraped from Wikipedia (1 November 2022) on London Marathon winners, and general data. The two data sets can be joined by `Year`.
 
@@ -50,3 +54,7 @@ data(london_marathon, package = "LondonMarathon")
 </p>
 
 See the code in `inst/plots.R` to create these example plots.
+
+## Hex Sticker
+
+The background photo in the hex sticker is from [Benjamin Davies](https://unsplash.com/@bendavisual) on [Unsplash](https://unsplash.com/photos/Oja2ty_9ZLM).
