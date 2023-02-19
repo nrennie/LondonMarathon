@@ -1,10 +1,24 @@
-# London Marathon
+# {LondonMarathon}
 
-Two data sets scraped from Wikipedia (1 November 2022) on London Marathon winners, and general data. The two data sets can be joined by `Year`.
+An R package containing two data sets scraped from Wikipedia (1 November 2022) on London Marathon winners, and general data. The two data sets can be joined by `Year`.
+
+## Installation
+
+Install using:
+
+```
+remotes::install_github("nrennie/LondonMarathon")
+```
+Load the data sets with:
+
+```
+data(winners, package = "LondonMarathon")
+data(london_marathon, package = "LondonMarathon")
+```
 
 ## Data dictionaries
 
-### `winners.csv`
+### `winners`
 
 |Column       |Class      |Description                |Example              |
 |:------------|:----------|:--------------------------|:--------------------|
@@ -15,7 +29,7 @@ Two data sets scraped from Wikipedia (1 November 2022) on London Marathon winner
 |Time         |character  |Winning time               |02:11:48             |
 
 
-### `london_marathon.csv`
+### `london_marathon`
 
 |Column           |Class      |Description                                 |Example              |
 |:----------------|:----------|:-------------------------------------------|:--------------------|
@@ -31,7 +45,8 @@ Two data sets scraped from Wikipedia (1 November 2022) on London Marathon winner
 ## Plots
 
 <p align="center">
-  <img src="winners.png" width="48%">
-  <img src="london_marathon.png" width="48%">
+  <img src="inst/winners.png" width="48%">
+  <img src="inst/london_marathon.png" width="48%">
 </p>
 
+See the code in `inst/plots.R` to create these example plots.
