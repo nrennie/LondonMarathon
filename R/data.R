@@ -2,7 +2,7 @@
 #'
 #' A data set containing information on winners of London Marathon.
 #'
-#' @format A tibble with 163 rows and 5 variables:
+#' @format A tibble with 165 rows and 5 variables:
 #' \describe{
 #'   \item{Caegory}{Category of race: Men, Women, Wheelchair Men, or Wheelchair Women}
 #'   \item{Year}{Year of race}
