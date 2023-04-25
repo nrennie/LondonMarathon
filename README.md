@@ -46,6 +46,8 @@ data(london_marathon, package = "LondonMarathon")
 |Raised           |integer    |Amount raised for charity (£ millions)      |46.5                 |
 |Official.charity |character  |Official charity                            |SportsAid            |
 
+> At the time of last update (24/04/2023), wheelchair men and wheelchair women winners data was missing for 2022 and 2023.
+
 ## Plots
 
 <p align="center">

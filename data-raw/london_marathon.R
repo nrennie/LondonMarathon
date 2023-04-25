@@ -30,3 +30,4 @@ london_marathon <- london_data[[1]] %>%
 
 # save as csv
 write_csv(london_marathon, file = "london_marathon.csv")
+usethis::use_data(london_marathon, overwrite = TRUE)

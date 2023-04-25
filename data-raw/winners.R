@@ -30,3 +30,4 @@ winners <- london %>%
 
 # save as csv
 write_csv(winners, file = "winners.csv")
+usethis::use_data(winners, overwrite = TRUE)
