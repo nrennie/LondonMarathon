@@ -29,5 +29,5 @@ winners <- london %>%
   mutate(Time = chron(times = Time))
 
 # save as csv
-write_csv(winners, file = "winners.csv")
+write_csv(winners, file = "data-raw/winners.csv")
 usethis::use_data(winners, overwrite = TRUE)
