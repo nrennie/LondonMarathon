@@ -4,7 +4,7 @@
 
 # LondonMarathon <img src="man/figures/logo.png" align="right" width="120" />
 
-An R package containing two data sets scraped from Wikipedia (1 November 2022) on London Marathon winners, and general data. The two data sets can be joined by `Year`.
+An R package containing two data sets scraped from Wikipedia (last scraped 6 April 2025) on London Marathon winners, and general data. The two data sets can be joined by `Year`.
 
 ## Installation
 
@@ -45,8 +45,6 @@ data(london_marathon, package = "LondonMarathon")
 |Finishers        |integer    |Number of people who finished               |6255                 |
 |Raised           |integer    |Amount raised for charity (£ millions)      |46.5                 |
 |Official.charity |character  |Official charity                            |SportsAid            |
-
-> At the time of last update (24/04/2023), wheelchair men and wheelchair women winners data was missing for 2022 and 2023.
 
 ## Plots
 

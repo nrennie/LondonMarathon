@@ -1,8 +1,8 @@
 library(tidyverse)
 
 # read in data
-london_marathon <- read_csv("london_marathon.csv")
-winners <- read_csv("winners.csv")
+london_marathon <- read_csv("data-raw/london_marathon.csv")
+winners <- read_csv("data-raw/winners.csv")
 
 # london marathon plot
 london_plot <- london_marathon %>%
@@ -36,7 +36,7 @@ ggplot(
     panel.background = element_rect(fill = "white", colour = "white")
   )
 
-ggsave(filename = "london_marathon.png", height = 7, width = 5)
+ggsave(filename = "inst/london_marathon.png", height = 7, width = 5)
 
 # winners plot
 winners_plot <- winners %>%
@@ -68,4 +68,4 @@ ggplot(
     panel.background = element_rect(fill = "white", colour = "white")
   )
 
-ggsave(filename = "winners.png", height = 7, width = 5)
+ggsave(filename = "inst/winners.png", height = 7, width = 5)
