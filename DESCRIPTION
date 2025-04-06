@@ -1,11 +1,11 @@
 Package: LondonMarathon
 Title: Data on London Marathon
-Version: 0.0.2
+Version: 0.0.3
 Authors@R: 
     person(given = "Nicola",
            family = "Rennie",
            role = c("aut", "cre"),
-           email = "nrennie35@gmail.com")
+           email = "nrennie.research@gmail.com")
 Description: Provides data scraped from Wikipedia on London Marathon.
 Encoding: UTF-8
 LazyData: true
