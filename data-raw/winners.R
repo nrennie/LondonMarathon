@@ -23,7 +23,7 @@ london <- dplyr::bind_rows(london, .id = "Category") %>%
 winners <- london %>%
   rename(Time = `Time(h:m:s)`) %>%
   mutate(
-    Year = gsub("\\[|*.\\]", "", Year),
+    Year = gsub("\\[\\d+\\]", "", Year),
     Year = as.numeric(Year)
   ) %>%
   mutate(Time = chron(times = Time))
