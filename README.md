@@ -20,6 +20,8 @@ data(winners, package = "LondonMarathon")
 data(london_marathon, package = "LondonMarathon")
 ```
 
+> To make it easier to work with the `Time` column in the `winners` date, we suggest also installing the `{chron} package. If not installed, the times will be displayed as a decimal (representing the fraction of 24 hours).
+
 ## Data dictionaries
 
 ### `winners`

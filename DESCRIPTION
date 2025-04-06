@@ -10,7 +10,9 @@ Description: Provides data scraped from Wikipedia on London Marathon.
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
 Depends: 
-    R (>= 3.6)
+  R (>= 3.6)
+Suggests:
+  chron
 License: CC0
