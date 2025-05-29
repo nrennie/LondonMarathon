@@ -24,28 +24,28 @@ london_marathon <- london_data[[1]] %>%
   mutate(across(c(Applicants, Accepted, Starters, Finishers), parse_number))
 
 # process charity data
-charity_lookup <- london_raw |> 
-  html_elements(".wikitable.sortable") |> 
-  html_elements("tr") |> 
-  as.character() |> 
-  data.frame(raw_html = _) |> 
+charity_lookup <- london_raw |>
+  html_elements(".wikitable.sortable") |>
+  html_elements("tr") |>
+  as.character() |>
+  data.frame(raw_html = _) |>
   tibble::as_tibble() |>
   dplyr::slice(-c(1)) |>
   mutate(
     Year = str_extract_between(raw_html, "title=", ">"),
     Year = readr::parse_number(Year)
-  ) |> 
+  ) |>
   mutate(
     charities = str_extract_all_between(raw_html, "\n<a href=|<br><a href=", "</a>")
-  )  |> 
-  tidyr::unnest(charities) |> 
-  mutate(charities = stringr::str_split(charities, ">", simplify = TRUE)[,2]) |> 
-  dplyr::select(-raw_html) |> 
-  group_by(Year) |> 
-  summarise(`Official charity` = paste(charities, collapse = ';'), .groups = 'drop')
+  ) |>
+  tidyr::unnest(charities) |>
+  mutate(charities = stringr::str_split(charities, ">", simplify = TRUE)[, 2]) |>
+  dplyr::select(-raw_html) |>
+  group_by(Year) |>
+  summarise(`Official charity` = paste(charities, collapse = ";"), .groups = "drop")
 
 # join
-london_marathon <- london_marathon |> 
+london_marathon <- london_marathon |>
   left_join(charity_lookup, by = "Year")
 
 # save as csv
