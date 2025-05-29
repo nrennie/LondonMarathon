@@ -48,6 +48,8 @@ data(london_marathon, package = "LondonMarathon")
 |Raised           |integer    |Amount raised for charity (£ millions)      |46.5                 |
 |Official.charity |character  |Official charity                            |SportsAid            |
 
+Note: If there are multiple official charity partners in a given year, these are separated with a `;`. There are currently a few issues with some oddly formatted charity names in the raw data, and these are currently represented by `NA`.
+
 ## Plots
 
 <p align="center">
