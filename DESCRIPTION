@@ -1,6 +1,6 @@
 Package: LondonMarathon
 Title: Data on London Marathon
-Version: 0.0.3
+Version: 0.0.4
 Authors@R: 
     person(given = "Nicola",
            family = "Rennie",
