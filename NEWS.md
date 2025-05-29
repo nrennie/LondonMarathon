@@ -1,3 +1,7 @@
+## LondonMarathon 0.0.4
+
+* Re-scrape data to add 2025 data
+
 ## LondonMarathon 0.0.3
 
 * Re-scrape data to add 2024 data
